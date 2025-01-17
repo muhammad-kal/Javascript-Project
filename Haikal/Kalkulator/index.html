@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css.css"/>
+    <title>Kalkulator Gweh</title>
+</head>
+<body>
+    <div class="container">
+        <div class="kalkulator dark">
+            <div class="theme-switch active">
+                <i class="switch-icon"></i>
+            </div>
+            <div class="layar-display">
+                <div id="display"></div>
+            </div>
+            <div class="tombol-tombol">
+                <table>
+                    <tr>
+                        <td><button class="btn-operator" id="clear">C</button></td>
+                        <td><button class="btn-operator" id="/">&divide;</button></td>
+                        <td><button class="btn-operator" id="*">&times;</button></td>
+                        <td><button class="btn-operator" id="backspace"><</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-nomer" id="1">1</button></td>
+                        <td><button class="btn-nomer" id="2">2</button></td>
+                        <td><button class="btn-nomer" id="3">3</button></td>
+                        <td><button class="btn-operator" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-nomer" id="4">4</button></td>
+                        <td><button class="btn-nomer" id="5">5</button></td>
+                        <td><button class="btn-nomer" id="6">6</button></td>
+                        <td><button class="btn-operator" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-nomer" id="7">7</button></td>
+                        <td><button class="btn-nomer" id="8">8</button></td>
+                        <td><button class="btn-nomer" id="9">9</button></td>
+                        <td rowspan="2"><button class="btn-samadengan" id="samadengan">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn-nomer" id="(">(</button></td>
+                        <td><button class="btn-nomer" id="2">0</button></td>
+                        <td><button class="btn-nomer" id=")">)</button></td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="src/js.js"></script>
+
+</body>
+</html>
