@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-image: repeat-y;
+}
+.judul{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 4px white;
+    font-weight: bold;
+    padding: 10px;
+    padding-top:25px;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    margin:auto;
+    padding :20px;
+    position: relative;
+}
+
+.skor-komputer{
+    width :240px;
+    height: 120px;
+    position: absolute;
+    background-color:#52D3D8;
+    background:linear-gradient(to top,#52D3D8 0%,#D2E0FB 100% );
+    z-index: 1;
+    left: -33%;
+    bottom : 77%;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+}
+
+.skor-player{
+    width :240px;
+    height: 120px;
+    position: absolute;
+    background-color:#65B741;
+    left: 103%;
+    top:60%;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+}
+
+.tulisanSkorPlayer, .nilaiSkorPlayer{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    position: relative;
+    top:10px;
+}
+.nilaiSkorPlayer{
+    margin:auto;
+    vertical-align: middle;
+    margin-top:20px
+}
+
+.tulisanSkorKomputer, .nilaiSkorKomputer{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    position: relative;
+    top:10px;
+}
+.nilaiSkorKomputer{
+    margin:auto;
+    vertical-align: middle;
+    margin-top:20px
+}
+
+.area-komputer{
+    width:560px;
+    height: 300px;
+    margin:5px auto;
+    position:relative;
+    background-color: #638889;
+    background: linear-gradient(to top,#52D3D8  0%, #D2E0FB 100%);
+    box-sizing: border-box;
+    border-radius: 40px 40px 0 0;
+}
+.area-pemain{
+    width: 560px;
+    height: 300px;
+    margin:5px auto;
+    position: relative;
+    background-color: #65B741;
+    /* background:linear-gradient(to top, #508D69  0%,#9ADE7B 100%); */
+    border-radius: 0 0 40px 40px;
+    box-sizing: border-box
+    
+}
+
+.info {
+    width:150px;
+    height: 70px;
+    position: absolute;
+    margin: auto;
+    background-color: white;
+    border:5px solid salmon;
+    z-index: 1;
+    margin-left: 220px;
+    margin-top: -40px;
+    border-radius: 30px 30px 30px 30px;
+    text-align: center;
+    color:black;
+    font-weight: bolder;
+    line-height: 65px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+
+}
+
+img{
+    
+    border-color: black;
+    width:130px;
+    height: 130px;
+    display: block;
+    margin:auto;
+    object-fit: none;
+    object-position: center center ;
+    border-radius: 20%;
+    box-shadow: 0 0 1px 3px;
+    
+}
+
+ul{
+    list-style: none;
+    padding-top:80px;
+    padding-left:25px;
+
+}
+
+li{
+    display: inline-block;
+    margin:0 20px;
+}
+
+.kertas, .batu, .gunting{
+    position: relative;
+    transition: .3s;
+    top:0;
+    cursor: pointer;
+}
+
+.img-komputer{
+    position: absolute;
+    left:40%;
+    z-index: 1  ;
+    margin:auto;
+    padding-top: -50px;
+    rotate: 180deg;
+    bottom: 65%;
+
+}
+
+.kertas:hover, .batu:hover, .gunting:hover, .active{
+    box-shadow :0 0  4px 7px black;
+}
